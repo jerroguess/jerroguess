@@ -1,0 +1,224 @@
+body
+{
+    background-color: #D0CDCC;			/*met l'image de fond*/
+	background-attachment : fixed;				/*l'image ne se scroll pas avec la page*/
+	background-size:auto 100%;
+	background-repeat : no-repeat;				/*l'image ne se répète pas*/
+	background-position : bottom right;				/*l'image est centrée */
+    font-family: 'Trebuchet MS', Arial, sans-serif;				/*la police de base est Trebuchet MS, sinon Arial, sinon en dernier recourt une police standard sans-serif*/
+    color: #181818;								/*choix de la couleur de police*/
+}
+
+#bloc_page				/*englobe tous les éléments de la page*/
+{
+    width: 900px;		/*les éléments de la page fond 900px de large*/
+    margin: auto;		/*les éléments de la page sont centrés automatiquement*/
+}
+
+/*HEADER*/
+/*____________________________________________________*/
+
+
+header{ 
+	height: 265px;
+}
+
+#titre_principal
+{
+    background: url('src/img/separateur.png') repeat-x bottom;  /*mise en place de l'image séparatrice*/
+    text-align: center;											/*centrage des éléments du header*/
+    width: 100%;
+}
+
+header h1
+{
+    font-size: 3em;										/*choix de la taille de police trois fois plus grande que le standard*/
+    font-weight: normal;			/*pas de gras*/
+	display: inline-block;
+	width : 100%;
+	margin : 10px 0;				/*marge en bas et en haut de 10px et nulle à droite et à gauche*/
+    text-transform: uppercase;		
+}
+
+#navigation
+{
+    display: inline-block;
+    width: 80%;					/*choix de la largeur de nav*/
+	text-align : center;
+	vertical-align : top;
+	margin-bottom : auto;
+}
+
+#navigation > ul
+{
+    list-style-type: none;			/*suppression des puces de la liste*/
+	padding : 0;
+}
+
+#navigation > ul > li
+{	
+    display: inline-block;
+	width : 19.4%;
+}
+
+
+#navigation a
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+#navigation a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
+
+#utilisateur {
+	display : inline-block;
+  padding:0;
+  margin:0;
+  list-style:none;
+  text-align: center;
+  width: 19%;
+}
+#utilisateur ul {
+  padding:0;
+  list-style:none;
+  text-align: center;
+}
+
+#utilisateur li li {
+   max-height:0;
+   overflow: hidden;
+   transition: all .5s;
+   border-radius:0;
+   background: #444;
+   box-shadow: none;
+   border:none;
+   margin:0
+}
+#utilisateur a {
+  font-size: 1.3em;
+  display:block;
+  text-decoration: none;
+  color: #181818;
+  padding-bottom: 3px;
+}
+#utilisateur ul li a, #menu-accordeon li:hover li a {
+  font-size:1.3em
+}
+#utilisateur li:hover > a{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+#utilisateur li li:hover {
+   background: #999;
+}
+#utilisateur ul li:last-child {
+   border-radius: 0 0 6px 6px;
+   border:none;
+}
+#utilisateur li:hover li {
+  max-height: 15em;
+}
+
+/*FOOTER*/
+/*____________________________________________________*/
+footer
+{
+	text-align: center;
+	color: white;
+	margin-top: 75px;
+}
+
+
+/*CONTENU*/
+/*____________________________________________________*/
+
+.contenu
+{
+	width: 860px;
+	min-height: 460px;
+	padding : 20px;
+	vertical-align: top;
+	border-radius: 10px;
+	background-color: #f7f5f3;
+	box-shadow: 0px 20px 50px #1c1a19;	
+}
+
+#page_connexion_form{
+	text-align : center;
+}
+#page_connexion_form table {
+	width : 35%;
+	margin-left : auto;
+	margin-right : auto;
+}
+#page_connexion_form article {
+	margin-top : 50px;
+}
+
+#tableau_de_bord{
+	display : table;
+	width : 100%;
+        border-collapse: separate;
+        border-spacing: 5px 8px; 
+}
+#tableau_de_bord > a{
+	display : table-cell;
+	width : 150px;
+	height : 150px;
+	margin : 10px;
+	text-align : center;
+}
+#tableau_de_bord > a>img{
+	width : 150px;
+	height : 150px;
+}
+
+.pageRecherche > form, table{
+	width : 100%;
+	text-align : center;
+}
+
+.pageRecherche input, select{
+	height: 30px;
+	width : 170px;
+	font-size: 1em;
+    box-shadow: 0px 2px 5px grey;
+    border-radius: 5px;
+	text-align: center;	
+	margin : 5px;
+	background-color : white;
+}
+.pageRecherche th{
+	background-color : grey;
+	color : white;
+}
+.pageRecherche td, th{
+	height: 30px;
+	width : 170px;
+	font-size: 1em;
+    box-shadow: 0px 2px 5px #1c1a19;
+	text-align: center;
+}
+.pageRecherche tr:nth-child(even) {background: #DCC}
+.pageRecherche tr:nth-child(odd) {background: #FFF}
+
+.pageRecherche a, #tableau_de_bord a{
+  text-decoration: none;
+  color: green;
+  font-weight: bold;
+  padding-bottom: 3px;
+}
+.alignRight{
+	text-align : right;
+}
+.largeCenter{
+	width : 100%;
+	text-align : center;
+}
